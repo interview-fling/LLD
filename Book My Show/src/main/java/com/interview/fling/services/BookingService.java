@@ -39,7 +39,6 @@ public class BookingService {
     public Cart initiateBooking(int showId, List<String> showSeatList, int userId) {
         cartCount++;
         MovieShow movieShow = showService.getShow(showId); // Do some validations
-
         List<ShowSeat> selectedShowSeat = getShowSeatsFromIds(showSeatList, movieShow);
         cartMap.put(cartCount, new Cart(selectedShowSeat, showId, userId, cartCount));
         return cartMap.get(cartCount);

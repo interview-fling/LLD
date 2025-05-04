@@ -12,15 +12,6 @@ import java.util.stream.Collectors;
 
 public class ScreenService extends SeatService {
 
-//    private static ScreenService instance;
-//
-//    public static ScreenService getInstance() {
-//        if (instance == null) {
-//            instance = new ScreenService();
-//        }
-//        return instance;
-//    }
-
     private int screenCounter;
     private final Map<Integer, Screen> screenMap;
 
